@@ -29,7 +29,9 @@ Base de datos:
 #Inicializacion de la base de datos:
 >rails db:seed
 #Tambien se puede iniciaizar entrando a la consola de rails
+
 >rails c
+
 >RolUser.create([{name: "Administrador"}, {name: "Analista"}, {name: "Programador"}, {name: "Asistente"}, {name: "Pasante"}])
 
 #Iniciar servidor
