@@ -3,10 +3,5 @@
 	<td><%= truncate(user.email, length: 15)%></td>
 	<td><%= user.phone%></td>
 	<td><%= user.rol_user.name%></td>
-	<td>
-		<% unless @log_user == user %>
-		<%= link_to "<i class='fi-trash be-icon-red'></i>".html_safe, user_destroy_path(user), method: :delete %>
-		
-		<% end %>
-	</td>
+	<td><%= user.updated_at %></td>
 </tr>

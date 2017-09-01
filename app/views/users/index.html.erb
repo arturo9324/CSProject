@@ -1,4 +1,4 @@
-<%if @log_user.is_admin%>
+
 	<div class="card form big-padding">
 		<h1>Usuarios</h1>
 		<table class="striped centered">
@@ -8,7 +8,7 @@
 					<th data-field="email">email</th>
 					<th data-field="phone">Teléfono</th>
 					<th data-field="type">Tipo de usuario</th>
-					<th data-field="delete">Eliminar</th>
+					<th data-fiel="date">Ultima modificación</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -19,6 +19,3 @@
 	<div class="top-space center">
 		<%= will_paginate @user %>
 	</div>
-<%else%>
-no eres admin
-<%end%>

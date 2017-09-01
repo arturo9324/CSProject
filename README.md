@@ -2,8 +2,14 @@
 Proyecto para CS.
 Lenguaje de programación Ruby
 Framework Rails
+Version de Ruby: 2.2.6
 
-#Version de Ruby: 2.2.6
+#Funcinalidad
+Se debe crear un nuevo usuario para utilizar el sistema (con nombre, email, teléfono, rol, contraseña)
+Se puede modificar el perfil del usuario (Todo menos el correo, se debe introducir la contraseña para poder editar el perfil)
+Se puede cancelar la cuenta, con lo cual se elimina por completo el usuario
+Se pueden listar los usuarios con sus caracteristicas principales (nombre, correo, tipo de usuario, telefono, y fecha-hora de la ultima modificación)
+
 
 #Instalación:
 >bundle install
@@ -22,10 +28,9 @@ Base de datos:
 
 #Inicializacion de la base de datos:
 >rails db:seed
-
-#Pruebas
->rails db:migrate RAILS_ENV=test
->rspec
+#Tambien se puede iniciaizar entrando a la consola de rails
+>rails c
+>RolUser.create([{name: "Administrador"}, {name: "Analista"}, {name: "Programador"}, {name: "Asistente"}, {name: "Pasante"}])
 
 #Iniciar servidor
 >rails s -p puerto(default 3000)

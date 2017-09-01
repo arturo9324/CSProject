@@ -23,6 +23,18 @@ h6 {
 	min-width: 100%;
 }
 
+.close{
+	background-color: #b71c1c
+}
+
+.close:focus{
+	background-color: #c62828
+}
+
+.close:hover{
+	background-color: #d32f2f
+}
+
 .body {
 	padding:10px;
 	padding-bottom:100px;   /* Height of the footer */
