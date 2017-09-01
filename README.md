@@ -8,3 +8,5 @@ Instalación:
 
 
 Configuración:
+Establecer certificado (Windows) https://gist.github.com/fnichol/867550
+Instalar devise rails generate devise:install
