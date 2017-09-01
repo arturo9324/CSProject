@@ -1,22 +1,22 @@
 <nav>
 	<div class="nav-wrapper">
-		<a href="#" class="brand-logo">Index</a>
+		<a href="/" class="brand-logo">Index</a>
 		<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 		<ul id="slide-out" class="side-nav">
 			<% if user_signed_in? %>
 			<li>Editar cuenta</li>
 			<li>Cerrar sesión</li>
 			<%else%>
-			<li><a href="#" onclick="show_sing_id()">Sign in</a></li>
-			<li><%= link_to "Sign up", new_user_registration_path%></li>
+			<li><%= link_to "Sign_in", new_user_session_path%></li>
+			<li><%= link_to "Cerrar Sesión", destroy_user_session_path, method: :delete %></li>
 			<%end%>
 		</ul>
 		<ul class="right hide-on-med-and-down">
 			<% if user_signed_in? %>
-			<li>Editar cuenta</li>
-			<li>Cerrar sesión</li>
+			<li><%= link_to "Editar cuenta", edit_user_registration_path%></li>
+			<li><%= link_to "Cerrar Sesión", destroy_user_session_path, method: :delete %></li>
 			<%else%>
-			<li><a href="#" onclick="show_sing_id()">Sign in</a></li>
+			<li><%= link_to "Sign_in", new_user_session_path%></li>
 			<li><%= link_to"Sign up", new_user_registration_path%></li>
 			<%end%>
 		</ul>

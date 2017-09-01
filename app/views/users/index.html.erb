@@ -1,0 +1,24 @@
+<%if @log_user.is_admin%>
+	<div class="card form big-padding">
+		<h1>Usuarios</h1>
+		<table class="striped centered">
+			<thead>
+				<tr>
+					<th data-field="name">Nombre</th>
+					<th data-field="email">email</th>
+					<th data-field="phone">Teléfono</th>
+					<th data-field="type">Tipo de usuario</th>
+					<th data-field="delete">Eliminar</th>
+				</tr>
+			</thead>
+			<tbody>
+				<%= render @users %>
+			</tbody>
+		</table>
+	</div>
+	<div class="top-space center">
+		<%= will_paginate @user %>
+	</div>
+<%else%>
+no eres admin
+<%end%>

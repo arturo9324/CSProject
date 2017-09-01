@@ -6,6 +6,10 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+select{
+	display: block	
+}
+
 h6 {
 	color: #E74C3C;
 	padding: 10px; 
@@ -70,9 +74,6 @@ padding:12px;
 	font-style: bold;
 }
 
-nav{
-	background-color: #ef6c00;
-}
 
 .form{
 	width:80%;
